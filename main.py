@@ -5,6 +5,9 @@ from PyQt6.QtWidgets import QApplication, QMainWindow
 from PyQt6.QtCore import QThread, pyqtSignal
 from ui.ui_main import Ui_Main
 
+from src.converter_service import Process
+from src.converter_worker import ExcelConverter
+
 class Main(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
